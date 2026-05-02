@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Special+Elite&display=swap");
+
+:root {
+  --color1: #121212;
+  --color2: #1f1f1f;
+  --color3: #494949;
+  --color4: #e0e0e0;
+  --red: #ef4444;
+  --orange: #f97316;
+  --yellow: #e7b828;
+  --green: #1faa52;
+  --indigo: #46a0c8;
+  --blue: #362d85;
+  --violet: #6b32c8;
+
+  --s1: 4px;
+  --s2: 8px;
+  --s3: 12px;
+  --s4: 16px;
+  --s5: 24px;
+  --s6: 32px;
+  --s7: 48px;
+  --s8: 64px;
+  --s9: 96px;
+  --s10: 128px;
+  --s11: 192px;
+  --s12: 256px;
+  --s13: 384px;
+  --s14: 512px;
+  --s15: 640px;
+  --s16: 768px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+
+  color: #e0e0e0;
+  font-family: "Special Elite", cursive;
+
+  box-sizing: border-box;
+
+  transition: all 0.3s;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+  background-color: var(--color2);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--color3);
+  border-radius: 5px;
+  border: 3px solid var(--color1);
+  cursor: pointer;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--color1);
+  border-radius: 5px;
+}
+
+button {
+  display: flex;
+
+  background: none;
+  border: none;
+
+  cursor: pointer;
+
+  transition: all 0.3s;
+
+  & span {
+    color: inherit;
+  }
+}
+
+abbr {
+  text-decoration: none;
+}
+
+select {
+  border: none;
+  border-radius: 0;
+  outline: none;
+}
+
+input,
+textarea {
+  background: none;
+  border: none;
+  outline: none;
+
+  resize: none;
+
+  color: var(--cor04);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+
+  height: 100vh;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}

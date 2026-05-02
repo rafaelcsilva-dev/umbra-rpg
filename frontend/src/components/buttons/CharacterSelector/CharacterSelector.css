@@ -1,0 +1,22 @@
+#character-selector {
+  display: flex;
+  align-items: center;
+  gap: var(--s2);
+
+  padding: var(--s2);
+
+  background-color: var(--color2);
+  border-left: var(--s1) solid var(--color4);
+  border-radius: var(--s1);
+
+  cursor: pointer;
+
+  & img {
+    width: var(--s8);
+    border-radius: var(--s1);
+  }
+
+  &:hover {
+    background-color: var(--color3);
+  }
+}

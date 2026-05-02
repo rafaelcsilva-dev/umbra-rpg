@@ -1,0 +1,43 @@
+.home-screen {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-start;
+  gap: var(--s5);
+
+  height: 100%;
+
+  padding: var(--s5);
+
+  background-color: var(--color1);
+
+  & button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 100%;
+    max-width: var(--s10);
+    padding: var(--s5);
+
+    background-color: var(--color3);
+    border-radius: var(--s1);
+    box-shadow: 0 0 12px #00000063;
+
+    color: var(--color4);
+
+    cursor: pointer;
+
+    transition: all 0.3s;
+  }
+
+  & button:hover {
+    transform: translateX(var(--s1));
+    background-color: var(--color4);
+    color: var(--color1);
+  }
+
+  & span {
+    color: inherit;
+  }
+}

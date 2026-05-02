@@ -1,0 +1,28 @@
+.list-player-screen {
+  display: flex;
+  flex-direction: column;
+
+  align-content: flex-start;
+  gap: var(--s5);
+
+  height: 100%;
+
+  padding: var(--s5);
+
+  background-color: var(--color1);
+
+  & button {
+    width: fit-content;
+    margin-left: auto;
+    padding: var(--s1);
+
+    border: 2px dashed var(--color4);
+
+    &:hover {
+      background-color: var(--color1);
+      border: 2px solid var(--color1);
+      border-radius: var(--s1);
+      filter: invert(100%);
+    }
+  }
+}
