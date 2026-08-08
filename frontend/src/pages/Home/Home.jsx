@@ -11,40 +11,17 @@ export default function Home() {
       <Header />
 
       <section className="home-screen">
-        <button onClick={() => navigate("/list-character")}>
-          <Icon name={"person_add"} />
-          <span>Personagem</span>
-        </button>
+        <nav>
+          <button>
+            <Icon name={"person"} />
+            <span>JOGADOR</span>
+          </button>
 
-        <button onClick={() => navigate("/campaign")}>
-          <Icon name={"note_add"} />
-          <span>Campanha</span>
-        </button>
-
-        <button onClick={() => navigate("/rules")}>
-          <Icon name={"import_contacts"} />
-          <span>Sistema</span>
-        </button>
-
-        <button onClick={() => navigate("/home")}>
-          <Icon name={"skull"} />
-          <span>Bestiário</span>
-        </button>
-
-        <button onClick={() => navigate("/home")}>
-          <Icon name={"swords"} />
-          <span>Equipamentos</span>
-        </button>
-
-        <button onClick={() => navigate("/home")}>
-          <Icon name={"article"} />
-          <span>Documentação</span>
-        </button>
-
-        <button onClick={() => navigate("/home")}>
-          <Icon name={"settings"} />
-          <span>Configurações</span>
-        </button>
+          <button>
+            <Icon name={"crown"} />
+            <span>MESTRE</span>
+          </button>
+        </nav>
       </section>
     </>
   );

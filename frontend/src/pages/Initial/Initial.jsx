@@ -7,7 +7,7 @@ export default function Initial() {
 
   return (
     <section className="initial-screen">
-      <img src="./public/assets/umbra-logo.png" alt="Umbra RPG logo" />
+      <img src="/assets/umbra-logo.png" alt="Umbra RPG logo" />
 
       <p>
         Conheça UMBRA rpg, um universo onde as fronteiras da realidade se
