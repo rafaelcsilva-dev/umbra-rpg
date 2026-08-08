@@ -1,0 +1,41 @@
+.master-screen {
+  display: flex;
+  flex: 1;
+
+  background-color: var(--color1);
+
+  & nav {
+    display: flex;
+    flex-direction: column;
+    gap: var(--s3);
+
+    width: fit-content;
+    height: 100%;
+    padding: var(--s4) var(--s3);
+
+    border-right: 2px solid var(--color3);
+
+    & button {
+      align-items: center;
+      gap: var(--s1);
+
+      padding: var(--s1);
+
+      border-radius: var(--s1);
+
+      &:hover {
+        background-color: var(--color3);
+        color: var(--color4);
+      }
+
+      &:focus {
+        background-color: var(--color4);
+        color: var(--color1);
+      }
+    }
+  }
+
+  & section {
+    padding: var(--s4);
+  }
+}

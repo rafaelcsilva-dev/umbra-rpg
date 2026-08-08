@@ -1,38 +1,39 @@
 .initial-screen {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
+  gap: var(--s5);
   flex: 1;
 
-  background: url(../../../public/assets/bg/fluido-acrilico-pb-4.jpg);
+  height: 100vh;
+  padding: var(--s4);
+
+  background: url(../../../public/assets/bg/initial-bg.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 
   color: #e0e0e0;
 
+  display: flex;
+  flex-direction: column;
+
+  & img {
+    width: 50%;
+    max-width: var(--s12);
+    filter: grayscale(100%) invert(100%);
+  }
+
+  & p {
+    width: 80%;
+    text-align: center;
+    line-height: var(--s5);
+  }
+
   & div {
     display: flex;
-    flex-direction: column;
-    flex: 1;
-    gap: var(--s4);
-
-    padding: var(--s9) var(--s8);
-    height: 100%;
-
-    backdrop-filter: blur(2px);
-
-    & h1 {
-      font-size: var(--s7);
-
-      & span {
-        font-size: var(--s3);
-      }
-    }
-
-    & p {
-      line-height: var(--s5);
-    }
+    gap: var(--s5);
 
     & button {
       width: fit-content;

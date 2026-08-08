@@ -1,4 +1,4 @@
-#character-selector {
+.profile-card {
   display: flex;
   align-items: center;
   gap: var(--s2);
@@ -6,17 +6,17 @@
   padding: var(--s2);
 
   background-color: var(--color2);
-  border-left: var(--s1) solid var(--color4);
+  border-left: var(--s1) solid var(--red);
   border-radius: var(--s1);
 
   cursor: pointer;
 
+  &:hover {
+    background-color: var(--color3);
+  }
+
   & img {
     width: var(--s8);
     border-radius: var(--s1);
-  }
-
-  &:hover {
-    background-color: var(--color3);
   }
 }

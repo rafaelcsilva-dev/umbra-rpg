@@ -5,14 +5,15 @@
   --color2: #1f1f1f;
   --color3: #494949;
   --color4: #e0e0e0;
-  --red: #ef4444;
-  --orange: #f97316;
-  --yellow: #e7b828;
-  --green: #1faa52;
-  --indigo: #46a0c8;
-  --blue: #362d85;
-  --violet: #6b32c8;
+  --red: #5c1d1d;
+  --orange: #9c4221;
+  --yellow: #a38244;
+  --green: #2d4233;
+  --indigo: #324a54;
+  --blue: #1c1d26;
+  --violet: #38253b;
 
+  /*Tipografia*/
   --s1: 4px;
   --s2: 8px;
   --s3: 12px;
@@ -28,7 +29,7 @@
   --s13: 384px;
   --s14: 512px;
   --s15: 640px;
-  --s16: 768px;
+  --s16: 768px /*Espaçamentos*/;
 }
 
 * {
@@ -107,4 +108,9 @@ body {
   display: flex;
   flex-direction: column;
   flex: 1;
+
+  background: url(../../public/assets/bg/backgound-grunge.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }

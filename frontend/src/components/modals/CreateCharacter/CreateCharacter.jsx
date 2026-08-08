@@ -3,32 +3,26 @@ import { useState } from "react";
 import Icon from "../../buttons/Icon";
 import "./CreateCharacter.css";
 
-import Informations from "./1-Informations/Informations";
-import Details from "./2-Details/Details";
-import Levels from "./3-Levels/Levels";
-import Origins from "./4-Origins/Origins";
-import Attributes from "./5-Attributes/Attributes";
+import Infos from "./Infos/Infos";
+import Details from "./Details/Details";
+import Archetype from "./Archetype/Archetype";
 
 export default function CreateCharacter({ OnClose }) {
-  const [currentStep, setCurrentStep] = useState(0);
+  const [currentSection, setCurrentSection] = useState(0);
 
-  const steps = ["INFORMAÇÕES", "DETALHES", "NÍVEL", "ORIGENS", "ATRIBUTOS"];
+  const sections = [
+    { title: "INFORMAÇÕES", component: <Infos /> },
+    { title: "DETALHES", component: <Details /> },
+    { title: "ARQUÉTIPOS", component: <Archetype/> },
+  ];
 
   const nextStep = () => {
-    setCurrentStep((prev) => (prev + 1) % steps.length);
+    setCurrentSection((prev) => (prev + 1) % sections.length);
   };
 
   const prevStep = () => {
-    setCurrentStep((prev) => (prev - 1 + steps.length) % steps.length);
+    setCurrentSection((prev) => (prev - 1 + sections.length) % sections.length);
   };
-
-  const stepComponents = [
-    <Informations />,
-    <Details />,
-    <Levels />,
-    <Origins />,
-    <Attributes />,
-  ];
 
   return (
     <>
@@ -38,14 +32,14 @@ export default function CreateCharacter({ OnClose }) {
             <Icon name={"info"}></Icon>
           </button>
 
-          <h2>{steps[currentStep]}</h2>
+          <h2>{sections[currentSection].title}</h2>
 
           <button type="button" onClick={OnClose}>
             <Icon name={"close"}></Icon>
           </button>
         </header>
 
-        {stepComponents[currentStep]}
+        {sections[currentSection].component}
 
         <footer>
           <button type="button" onClick={prevStep}>

@@ -1,9 +1,12 @@
+import { useNavigate } from "react-router-dom";
 import "./Campaign.css";
 
 import Header from "../../components/Header/Header";
 import Icon from "../../components/buttons/Icon";
 
 export default function Campaign() {
+  const navigate = useNavigate();
+
   return (
     <>
       <Header />
@@ -21,7 +24,7 @@ export default function Campaign() {
 
           <div>
             <p>Campanha: Refúgio Sereno</p>
-            <button>Entrar</button>
+            <button onClick={() => navigate("/master-screen")}>Entrar</button>
           </div>
         </article>
       </section>

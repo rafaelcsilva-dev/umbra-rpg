@@ -11,7 +11,7 @@ export default function Home() {
       <Header />
 
       <section className="home-screen">
-        <button onClick={() => navigate("/listCharacter")}>
+        <button onClick={() => navigate("/list-character")}>
           <Icon name={"person_add"} />
           <span>Personagem</span>
         </button>

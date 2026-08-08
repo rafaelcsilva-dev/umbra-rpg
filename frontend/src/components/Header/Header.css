@@ -6,24 +6,12 @@
   width: 100%;
   padding: var(--s5);
 
-  background-color: var(--color2);
-  border-bottom: 2px solid var(--color3);
+  background: linear-gradient(to bottom, black, #00000000);
 
-  & > button:nth-child(1) {
-    display: flex;
-    align-items: flex-end;
-    gap: var(--s1);
+  & img {
+    width: var(--s7);
 
-    font-weight: 700;
-    text-shadow: 1px 1px 1px black;
-
-    & > span {
-      font-size: var(--s4);
-    }
-
-    & > p {
-      font-size: var(--s3);
-    }
+    filter: grayscale(100%) invert(100%);
   }
 
   & div {

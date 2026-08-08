@@ -7,17 +7,16 @@ export default function Initial() {
 
   return (
     <section className="initial-screen">
-      <div>
-        <h1>
-          UMBRA <span>RPG</span>
-        </h1>
-        <p>
-          Conheça UMBRA rpg, um universo onde as fronteiras da realidade se
-          desfazem, o desconhecido ganha forma e cada escolha pode revelar
-          verdades que deveriam permanecer ocultas.
-        </p>
+      <img src="./public/assets/umbra-logo.png" alt="Umbra RPG logo" />
 
-        <button onClick={() => navigate("/home")}>Entrar</button>
+      <p>
+        Conheça UMBRA rpg, um universo onde as fronteiras da realidade se
+        desfazem, o desconhecido ganha forma e cada escolha pode revelar
+        verdades que deveriam permanecer ocultas.
+      </p>
+
+      <div>
+        <button onClick={() => navigate("/home")}>JOGUE AGORA</button>
       </div>
     </section>
   );

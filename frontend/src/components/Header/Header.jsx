@@ -5,19 +5,8 @@ export default function Header() {
   return (
     <header className="main-header">
       <button>
-        <span>UMBRA</span>
-        <p>RPG</p>
+        <Icon name={"menu"} />
       </button>
-
-      <div>
-        <button>
-          <Icon name={"person"} />
-        </button>
-
-        <button>
-          <Icon name={"menu"} />
-        </button>
-      </div>
     </header>
   );
 }
