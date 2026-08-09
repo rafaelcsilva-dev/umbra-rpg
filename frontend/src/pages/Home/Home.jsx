@@ -1,7 +1,9 @@
 import { useNavigate } from "react-router-dom";
+
 import "./Home.css";
 import Header from "../../components/Header/Header.jsx";
 import Icon from "../../components/buttons/Icon.jsx";
+import ListCharacter from "../ListCharacter/ListCharacter.jsx";
 
 export default function Home() {
   const navigate = useNavigate();
@@ -22,6 +24,8 @@ export default function Home() {
             <span>MESTRE</span>
           </button>
         </nav>
+
+        <ListCharacter />
       </section>
     </>
   );

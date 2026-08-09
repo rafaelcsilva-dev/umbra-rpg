@@ -1,11 +1,12 @@
 import { useState } from "react";
 
-import Icon from "../../buttons/Icon";
 import "./CreateCharacter.css";
 
-import Infos from "./Infos/Infos";
-import Details from "./Details/Details";
-import Archetype from "./Archetype/Archetype";
+import Icon from "../../components/buttons/Icon.jsx";
+
+import Infos from "./Infos/Infos.jsx";
+import Details from "./Details/Details.jsx";
+import Archetype from "./Archetype/Archetype.jsx";
 
 export default function CreateCharacter({ OnClose }) {
   const [currentSection, setCurrentSection] = useState(0);
@@ -13,7 +14,7 @@ export default function CreateCharacter({ OnClose }) {
   const sections = [
     { title: "INFORMAÇÕES", component: <Infos /> },
     { title: "DETALHES", component: <Details /> },
-    { title: "ARQUÉTIPOS", component: <Archetype/> },
+    { title: "ARQUÉTIPOS", component: <Archetype /> },
   ];
 
   const nextStep = () => {

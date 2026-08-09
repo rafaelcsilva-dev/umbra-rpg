@@ -5,7 +5,7 @@
   gap: var(--s5);
 
   height: 100%;
-  padding: var(--s5);
+  padding: var(--s2);
 
   background-color: var(--color1);
 
@@ -14,102 +14,20 @@
     margin-left: auto;
     padding: var(--s2);
 
-    background-color: rgba(30, 30, 35, 0.2);
+    background-color: var(--color1);
     border: 2px dashed var(--color3);
     border-radius: var(--s1);
 
-    color: var(--color4);
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    color: var(--color3);
 
     & span {
       color: inherit;
     }
 
     &:hover {
-      /* Substituído o invert(100%) por uma reação corrosiva metálica */
-      background-color: rgba(92, 29, 29, 0.15);
-      border: 2px dashed var(--orange); /* Acende o pontilhado em ferrugem */
+      background-color: var(--color2);
+      border: 2px dashed var(--color4);
       color: #ffffff;
-      box-shadow: 0 0 10px rgba(189, 83, 43, 0.2);
-    }
-  }
-
-
-  & .character-card {}
-  & div[role="button"],
-  & .player-row {
-    /* Use a classe real que você aplicou na div do card */
-    display: flex;
-    align-items: center;
-    gap: var(--s4);
-    padding: var(--s4);
-
-    background-color: rgba(30, 30, 35, 0.4);
-    border: 1px solid rgba(255, 255, 255, 0.02);
-    border-left: 4px solid var(--color3); /* Borda padrão antes do foco */
-    border-radius: var(--s1);
-    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.5);
-
-    cursor: pointer;
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-
-    /* Avatar do Personagem (ex: Batman, Spider-Man) */
-    & img {
-      width: var(--s8);
-      height: var(--s8);
-      object-fit: cover;
-      border-radius: var(--s1);
-      border: 1px solid rgba(255, 255, 255, 0.05);
-      filter: grayscale(
-        30%
-      ); /* Dá um clima mais soturno e menos saturado para as fotos */
-      transition: filter 0.3s;
-    }
-
-    /* Textos internos do card */
-    & h3,
-    & .character-name {
-      font-family: "Crimson Pro", serif; /* Mesma fonte de névoa do manual */
-      font-size: var(--s5);
-      color: #e3ded7;
-      margin: 0;
-    }
-
-    & p,
-    & .campaign-name {
-      font-family:
-        "Special Elite", cursive; /* Fonte de máquina para o subtexto/local */
-      font-size: var(--s3);
-      color: var(--color3); /* Tom de cinza-cinzas */
-      margin-top: var(--s1);
-    }
-
-    /* Efeito de seleção macabra ao passar o mouse pelo personagem */
-    &:hover {
-      transform: translateX(
-        var(--s1)
-      ); /* Movimento sutil para o lado ao selecionar na lista */
-      background-color: rgba(
-        92,
-        29,
-        29,
-        0.25
-      ); /* Preenchimento de sangue coagulado */
-      border-color: rgba(92, 29, 29, 0.1);
-      border-left: 4px solid var(--red); /* A barra lateral acende no tom escuro de sangue */
-      box-shadow: 6px 6px 18px rgba(0, 0, 0, 0.7);
-
-      & img {
-        filter: grayscale(0%); /* Devolve a cor original ao focar */
-      }
-
-      & p,
-      & .campaign-name {
-        color: var(
-          --color-rust-oxide,
-          var(--orange)
-        ); /* O nome da campanha acende em ferrugem */
-      }
     }
   }
 }

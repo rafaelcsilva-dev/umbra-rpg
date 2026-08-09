@@ -6,7 +6,7 @@
   padding: var(--s2);
 
   background-color: var(--color2);
-  border-left: var(--s1) solid var(--red);
+  border-left: var(--s1) solid var(--color4);
   border-radius: var(--s1);
 
   cursor: pointer;

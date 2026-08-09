@@ -6,10 +6,9 @@ import "./ListCharacter.css";
 import Header from "../../components/Header/Header.jsx";
 import Icon from "../../components/buttons/Icon.jsx";
 
-//import CharacterSelector from "../../components/buttons/CharacterSelector/CharacterSelector.jsx";
-import CreateCharacter from "../../components/modals/CreateCharacter/CreateCharacter.jsx";
-
 import ProfileCard from "../../components/ProfileCard/ProfileCard.jsx";
+
+import CreateCharacter from "../../modals/CreateCharacter/CreateCharacter.jsx";
 
 export default function ListCharacter() {
   const navigate = useNavigate();
@@ -18,8 +17,6 @@ export default function ListCharacter() {
 
   return (
     <>
-      <Header />
-
       {isModalOpen && (
         <CreateCharacter
           OnClose={() => {

@@ -1,4 +1,4 @@
-import Textarea from "../../../Inputs/Textarea";
+import Textarea from "../../../components/Inputs/Textarea.jsx";
 
 export default function Details() {
   return (
