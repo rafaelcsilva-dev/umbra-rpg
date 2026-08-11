@@ -5,16 +5,20 @@ import "./CreateCharacter.css";
 import Icon from "../../components/buttons/Icon.jsx";
 
 import Infos from "./Infos/Infos.jsx";
+import Concept from "./Concept/Concept.jsx";
 import Details from "./Details/Details.jsx";
 import Archetype from "./Archetype/Archetype.jsx";
+import Preview from "./Preview/Preview.jsx";
 
 export default function CreateCharacter({ OnClose }) {
   const [currentSection, setCurrentSection] = useState(0);
 
   const sections = [
     { title: "INFORMAÇÕES", component: <Infos /> },
+    { title: "CONCEITO", component: <Concept /> },
     { title: "DETALHES", component: <Details /> },
     { title: "ARQUÉTIPOS", component: <Archetype /> },
+    { title: "PREVIEW", component: <Preview /> },
   ];
 
   const nextStep = () => {

@@ -1,15 +1,37 @@
 import "./Infos.css";
-import Textarea from "../../../components/Inputs/Textarea.jsx";
+import Input from "../../../components/Inputs/Input/Input";
 
 export default function Infos() {
   return (
     <>
       <section className="create-character-infos">
-        <Textarea title="Ofício:" />
+        <Input
+          type={"text"}
+          title={"Nome:"}
+          id={"input-name"}
+          placeholder={"Ex: Valentim Ferreira..."}
+        />
 
-        <Textarea title="Estigma:" />
+        <Input
+          type={"text"}
+          title={"Local:"}
+          id={"input-location"}
+          placeholder={"Ex: São Paulo..."}
+        />
 
-        <Textarea title="Âncora:" />
+        <Input
+          type={"number"}
+          title={"Idade:"}
+          id={"input-age"}
+          placeholder={"Ex: 21..."}
+        />
+
+        <Input
+          type={"text"}
+          title={"Campanha:"}
+          id={"input-campaign"}
+          placeholder={"Ex: A Chama Eterna..."}
+        />
       </section>
     </>
   );

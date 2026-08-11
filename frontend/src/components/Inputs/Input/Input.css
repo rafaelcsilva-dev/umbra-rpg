@@ -1,0 +1,22 @@
+& label {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: var(--s1);
+
+  & input {
+    height: fit-content;
+    padding: var(--s2);
+
+    background-color: var(--c2);
+    border-radius: var(--s1);
+
+    &:hover {
+      background-color: var(--c3);
+    }
+
+    &::placeholder {
+      font-style: italic;
+    }
+  }
+}

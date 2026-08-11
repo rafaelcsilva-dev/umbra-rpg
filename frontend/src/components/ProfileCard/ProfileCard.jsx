@@ -1,13 +1,14 @@
 import "./ProfileCard.css";
 
-export default function ProfileCard({ img, alt, title, subtitle }) {
+export default function ProfileCard({ character }) {
   return (
     <div className="profile-card">
-      <img src={img} alt={alt} />
+      <img src={character.img} alt={`${character.name} icon profile`} />
 
       <div>
-        <h2>{title}</h2>
-        <span>{subtitle}</span>
+        <h2>{character.name}</h2>
+        <p>{character.campaign}</p>
+        <span>{character.released}</span>
       </div>
     </div>
   );

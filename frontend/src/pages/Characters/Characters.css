@@ -1,0 +1,42 @@
+.characters-screen {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s4);
+
+  height: 100%;
+  padding: var(--s4);
+
+  background-color: var(--c1);
+
+  & button {
+    width: fit-content;
+    padding: var(--s2);
+
+    background-color: var(--c1);
+    border: 2px dashed var(--c3);
+    border-radius: var(--s1);
+
+    color: var(--c3);
+
+    & span {
+      color: inherit;
+    }
+
+    &:hover {
+      background-color: var(--c2);
+      border: 2px dashed var(--c-primary);
+      color: var(--c-primary);
+    }
+  }
+
+  & > div {
+    display: flex;
+    flex-direction: column;
+    gap: var(--s4);
+
+    @media screen and (min-width: 782px) {
+      flex-wrap: wrap;
+      flex-direction: unset;
+    }
+  }
+}

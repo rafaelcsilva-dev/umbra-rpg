@@ -1,22 +1,21 @@
 .main-header {
   display: flex;
-  justify-content: space-between;
   align-items: center;
 
   width: 100%;
-  padding: var(--s5);
+  padding: var(--s4);
 
-  background: var(--color1);
-  border-bottom: 1px solid var(--color2);
+  background: var(--c1);
+  border-bottom: 1px solid var(--c3);
 
   & img {
-    width: var(--s7);
+    width: var(--4);
 
     filter: grayscale(100%) invert(100%);
   }
 
   & div {
     display: flex;
-    gap: var(--s5);
+    gap: var(--s4);
   }
 }

@@ -10,17 +10,23 @@
   gap: var(--s4);
 
   width: 90%;
-  max-width: var(--s14);
+  max-width: 500px;
   height: 90%;
   padding: var(--s4);
 
-  background-color: var(--color1);
-  border: 2px solid var(--color3);
+  background-color: var(--c1);
+  border: 1px solid var(--c3);
   border-radius: var(--s1);
 
   & > header {
     display: flex;
     justify-content: space-between;
+
+    & h2 {
+      font-size: var(--t-h3);
+      font-family: var(--t-decoration);
+      letter-spacing: 4px;
+    }
   }
 
   & > section {
@@ -29,10 +35,10 @@
     gap: var(--s4);
     flex: 1;
 
-    padding: var(--s4) 0;
+    padding: var(--s2) 0;
 
-    border-top: 2px solid var(--color3);
-    border-bottom: 2px solid var(--color3);
+    border-top: 1px solid var(--c3);
+    border-bottom: 1px solid var(--c3);
 
     overflow: auto;
   }

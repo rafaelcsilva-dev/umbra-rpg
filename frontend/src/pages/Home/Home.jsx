@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import "./Home.css";
 import Header from "../../components/Header/Header.jsx";
 import Icon from "../../components/buttons/Icon.jsx";
-import ListCharacter from "../ListCharacter/ListCharacter.jsx";
+import ListCharacter from "../Characters/Characters.jsx";
 
 export default function Home() {
   const navigate = useNavigate();
@@ -13,19 +13,20 @@ export default function Home() {
       <Header />
 
       <section className="home-screen">
-        <nav>
-          <button>
-            <Icon name={"person"} />
-            <span>JOGADOR</span>
-          </button>
+        <button onClick={() => navigate("/characters")}>
+          <Icon name={"person"} />
+          <span>Personagem</span>
+        </button>
 
-          <button>
-            <Icon name={"crown"} />
-            <span>MESTRE</span>
-          </button>
-        </nav>
+        <button onClick={() => navigate("/campaign")}>
+          <Icon name={"article"} />
+          <span>Campanha</span>
+        </button>
 
-        <ListCharacter />
+        <button onClick={() => navigate("/rules")}>
+          <Icon name={"import_contacts"} />
+          <span>Regras</span>
+        </button>
       </section>
     </>
   );

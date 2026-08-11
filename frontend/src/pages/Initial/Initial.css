@@ -15,7 +15,7 @@
   background-color: #000;
 
   color: #e0e0e0;
-  font-family: var(--font-decoration);
+  font-family: var(--f-decoration);
 
   overflow: hidden;
 
@@ -85,7 +85,7 @@
     & button {
       width: fit-content;
 
-      font-family: var(--font-decoration);
+      font-family: var(--f-decoration);
       font-size: var(--s4);
       font-weight: 600;
       text-shadow: 2px 2px 2px black;
@@ -97,10 +97,10 @@
 
       &::after {
         position: absolute;
-        top: 30%;
+        top: 50%;
         left: 0;
         width: 0%;
-        border: 1px solid transparent;
+        border-bottom: 1px solid transparent;
         content: "";
         transition:
           width 0.3s ease,
@@ -112,7 +112,7 @@
 
         &::after {
           width: 100%;
-          border-bottom: 2px solid var(--color4);
+          border-bottom: 1px solid var(--c4);
         }
       }
     }

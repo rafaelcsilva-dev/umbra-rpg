@@ -1,22 +1,25 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Special+Elite&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Special+Elite&display=swap");
 
 :root {
-  --color1: #121212;
-  --color2: #1f1f1f;
-  --color3: #494949;
-  --color4: #e0e0e0;
+  --c1: #121212;
+  --c2: #1f1f1f;
+  --c3: #494949;
+  --c4: #e0e0e0;
+
+  --c-primary: #8b5cf6;
+  --c-secondary: #796a9b;
 
   /* Tipografia */
-  --font-default: "Inter";
-  --font-decoration: "Special Elite";
+  --f-default: "Roboto";
+  --f-decoration: "Crimson Pro";
 
-  --text-small: 0.75rem; /* 12px */
-  --text-caption: 0.875rem; /* 14px */
-  --text-body: 1rem; /* 16px */
-  --text-h3: 1.25rem; /* 20px */
-  --text-h2: 1.5rem; /* 24px */
-  --text-h1: 2rem; /* 32px */
-  --text-display: 2.5rem; /* 40px */
+  --t-small: 0.75rem; /* 12px */
+  --t-caption: 0.875rem; /* 14px */
+  --t-body: 1rem; /* 16px */
+  --t-h3: 1.25rem; /* 20px */
+  --t-h2: 1.5rem; /* 24px */
+  --t-h1: 2rem; /* 32px */
+  --t-display: 2.5rem; /* 40px */
 
   /* Espaçamentos */
   --s1: 0.25rem; /* 4px */
@@ -26,6 +29,7 @@
   --s5: 2rem; /* 32px */
   --s6: 3rem; /* 48px */
   --s7: 4rem; /* 64px */
+  --s8: 5rem; /* 80px */
 }
 
 * {
@@ -33,7 +37,7 @@
   padding: 0;
 
   color: #e0e0e0;
-  font-family: var(--font-default);
+  font-family: var(--f-default);
 
   box-sizing: border-box;
 
@@ -42,19 +46,21 @@
 
 ::-webkit-scrollbar {
   width: 12px;
-  background-color: var(--color2);
+  background-color: var(--c2);
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: var(--color3);
-  border-radius: 5px;
-  border: 3px solid var(--color1);
+  background-color: var(--c3);
+  border-width: 0 2px 0 2px;
+  border-style: solid;
+  border-color: var(--c1);
+
   cursor: pointer;
 }
 
 ::-webkit-scrollbar-track {
-  background-color: var(--color1);
-  border-radius: 5px;
+  background-color: var(--c1);
+  border-radius: 4px;
 }
 
 button {
@@ -90,7 +96,7 @@ textarea {
 
   resize: none;
 
-  color: var(--cor04);
+  color: var(--c4);
 }
 
 body {
